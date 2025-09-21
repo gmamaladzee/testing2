@@ -1,0 +1,18 @@
+### Pirveli Workflow
+
+# name: Pirveli Workflow
+
+# on:
+#   push:
+#     branches: [main]
+
+# jobs:
+#   say-hello-job:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Pirveli Nabiji
+#         run: |
+#           echo "Gamarjoba (1)"
+#           echo "Gamarjoba (2)"
+#           echo "Gamarjoba (3)"
+#           echo "Gamarjoba (4)"

@@ -1,16 +1,17 @@
-name: Pirveli Workflow
+name: Meore Workflow
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  say-hello-job:
+  multi-step:
     runs-on: ubuntu-latest
     steps:
       - name: Pirveli Nabiji
-        run: |
-          echo "Gamarjoba (1)"
-          echo "Gamarjoba (2)"
-          echo "Gamarjoba (3)"
-          echo "Gamarjoba (4)"
+        run: echo "Es aris Pirveli Nabiji Rac Gaeshveba"
+
+      - name: Meore Nabiji
+        run: echo "Es aris Meore Nabiji Rac Gaeshveba"
+
+      - name: Mesame Nabiji
+        run: echo "Es aris Mesame Nabiji Rac Gaeshveba"
