@@ -1,0 +1,12 @@
+name: Pirveli Workflow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  say-hello-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pirveli Nabiji
+        run: echo "Hello World"
