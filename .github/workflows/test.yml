@@ -9,4 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Greeting
-        run: echo "Hello, from Github Actions" && echo "Another Hello World",
+        run: |
+          echo "Hello This is First Step"
+          echo "Hello This is Second"
+          echo "This is Third"
