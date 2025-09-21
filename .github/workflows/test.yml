@@ -1,17 +1,19 @@
-name: Meore Workflow
+name: Test Workflow
 
 on:
   workflow_dispatch:
 
 jobs:
-  multi-step:
+  job-one:
     runs-on: ubuntu-latest
     steps:
       - name: Pirveli Nabiji
-        run: echo "Es aris Pirveli Nabiji Rac Gaeshveba"
+        run: |
+          echo "Es aris Pirveli Nabiji Rac Gaeshveba"
 
+  job-two:
+    runs-on: ubuntu-latest
+    steps:
       - name: Meore Nabiji
-        run: echo "Es aris Meore Nabiji Rac Gaeshveba"
-
-      - name: Mesame Nabiji
-        run: echo "Es aris Mesame Nabiji Rac Gaeshveba"
+        run: |
+          echo "Es aris Pirveli Nabiji Rac Gaeshveba"
