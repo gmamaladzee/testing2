@@ -20,3 +20,12 @@ jobs:
         run: |
           echo "Hello from Job 2!"
           echo "Job 2 finished almost instantly."
+
+  job-three:
+    runs-on: ubuntu-latest
+    steps:
+      - name: A message from job two
+        run: |
+          echo "Hello from Job 3!"
+          sleep 15
+          echo "Job 3 finished almost instantly."
