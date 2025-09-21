@@ -10,6 +10,8 @@ jobs:
       - name: Pirveli Nabiji
         run: |
           echo "Es aris Pirveli Nabiji Rac Gaeshveba"
+          sleep 10
+          echo "Meore Brdzaneba"
 
   job-two:
     runs-on: ubuntu-latest
@@ -17,3 +19,4 @@ jobs:
       - name: Meore Nabiji
         run: |
           echo "Es aris Pirveli Nabiji Rac Gaeshveba"
+          echo "Meore Brdzaneba Meore Nabijidan"
