@@ -14,3 +14,9 @@ jobs:
           echo "Ref_Name: ${{ github.ref_name }}"
           echo "Actor: ${{ github.actor }}"
           echo "repo Owner: ${{ github.repository_owner }}"
+
+      - name: Moere nabiji
+        uses: actions/checkout@v4
+
+      - name: Yvela Failis Chamowera
+        run: ls -R
