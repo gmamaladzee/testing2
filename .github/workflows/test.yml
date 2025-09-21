@@ -1,4 +1,4 @@
-name: Test Workflow
+name: Chashenebuli cvladebi
 
 on:
   workflow_dispatch:
@@ -7,16 +7,10 @@ jobs:
   job-one:
     runs-on: ubuntu-latest
     steps:
-      - name: Pirveli Nabiji
+      - name: Davbechdot Chashenebuli cvladebi
         run: |
-          echo "Es aris Pirveli Nabiji Rac Gaeshveba"
-          sleep 10
-          echo "Meore Brdzaneba"
-
-  job-two:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Meore Nabiji
-        run: |
-          echo "Es aris Pirveli Nabiji Rac Gaeshveba"
-          echo "Meore Brdzaneba Meore Nabijidan"
+          echo "Repozitoriis saxeli: ${{ github.repository }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "Ref_Name: ${{ github.ref_name }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "repo Owner: ${{ github.repository_owner }}"
