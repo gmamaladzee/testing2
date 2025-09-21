@@ -1,11 +1,11 @@
-name: 4. Echo with Context Variables and List Files
+name: 4. Echo, List Files, and Call API
 
 on:
   push:
     branches: [main]
 
 jobs:
-  context-info-job:
+  api-call-job:
     runs-on: ubuntu-latest
     steps:
       - name: Print GitHub context information
@@ -19,3 +19,7 @@ jobs:
 
       - name: List all file names in the repository
         run: ls -R
+
+      - name: Make a simple API call
+        id: api_call
+        run: curl -X GET "https://jsonplaceholder.typicode.com/todos/1"
