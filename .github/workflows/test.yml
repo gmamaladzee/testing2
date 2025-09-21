@@ -1,18 +1,22 @@
-name: 1. First Workflow
+name: 3. Parallel Jobs with Echo
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  say-hell-job:
+  job-one:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Greeting
-        run: echo "Hello World"
+      - name: A message from job one
+        run: |
+          echo "Hello from Job 1!"
+          sleep 5 # ხელოვნურად ვაყოვნებთ 5 წამით
+          echo "Job 1 is finishing."
 
-      - name: Second Step
-        run: echo "Hello World"
-
-      - name: Third Step
-        run: echo "Hello World"
+  job-two:
+    runs-on: ubuntu-latest
+    steps:
+      - name: A message from job two
+        run: |
+          echo "Hello from Job 2!"
+          echo "Job 2 finished almost instantly."
