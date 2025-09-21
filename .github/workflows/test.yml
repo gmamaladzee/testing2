@@ -9,7 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Greeting
-        run: |
-          echo "Hello This is First Step"
-          echo "Hello This is Second"
-          echo "This is Third"
+        run: echo "Hello World"
+
+      - name: Second Step
+        run: echo "Hello World"
+
+      - name: Third Step
+        run: echo "Hello World"
