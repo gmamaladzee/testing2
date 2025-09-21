@@ -1,4 +1,4 @@
-name: 4. Echo with Context Variables
+name: 4. Echo with Context Variables and List Files
 
 on:
   push:
@@ -13,3 +13,9 @@ jobs:
           echo "The workflow is running in the '${{ github.repository }}' repository."
           echo "The code was pushed to the '${{ github.ref }}' branch."
           echo "This action was triggered by '${{ github.actor }}'."
+
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: List all file names in the repository
+        run: ls -R
