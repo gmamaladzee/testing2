@@ -9,4 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Pirveli Nabiji
-        run: echo "Hello World"
+        run: |
+          echo "Gamarjoba (1)"
+          echo "Gamarjoba (2)"
+          echo "Gamarjoba (3)"
+          echo "Gamarjoba (4)"
