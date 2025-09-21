@@ -1,31 +1,15 @@
-name: 3. Parallel Jobs with Echo
+name: 4. Echo with Context Variables
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
-  job-one:
+  context-info-job:
     runs-on: ubuntu-latest
     steps:
-      - name: A message from job one
+      - name: Print GitHub context information
         run: |
-          echo "Hello from Job 1!"
-          sleep 5 # ხელოვნურად ვაყოვნებთ 5 წამით
-          echo "Job 1 is finishing."
-
-  job-two:
-    runs-on: ubuntu-latest
-    steps:
-      - name: A message from job two
-        run: |
-          echo "Hello from Job 2!"
-          echo "Job 2 finished almost instantly."
-
-  job-three:
-    runs-on: ubuntu-latest
-    steps:
-      - name: A message from job two
-        run: |
-          echo "Hello from Job 3!"
-          sleep 15
-          echo "Job 3 finished almost instantly."
+          echo "The workflow is running in the '${{ github.repository }}' repository."
+          echo "The code was pushed to the '${{ github.ref }}' branch."
+          echo "This action was triggered by '${{ github.actor }}'."
